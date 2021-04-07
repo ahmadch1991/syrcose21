@@ -1,0 +1,153 @@
+Process _POLGkNMfEeWJV9QOcxWQYg {
+  modelName "RemoveTODOListOwner"
+  description "RemoveTODOListOwner"
+  dataFlowView true
+  processType Basic
+  isStateful false
+  StartSIB _POQmINMfEeWJV9QOcxWQYg at 350,50 size 100,108 {
+  	ComplexOutputPort _Q7YPQNMfEeWJV9QOcxWQYg at 5,67 size 90,18 {
+  		name "list"
+  		isList false
+  		libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  		-ComplexUpdate-> _T2GT8NMfEeWJV9QOcxWQYg via (140,126) decorate "Polyline" at (2,0) {
+  			id _Wv6ZsNMfEeWJV9QOcxWQYg
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	ComplexOutputPort _ROBecNMfEeWJV9QOcxWQYg at 5,85 size 90,18 {
+  		name "ownerToRemove"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexDirectDataFlow-> _VlDJENMfEeWJV9QOcxWQYg via (306,144) (306,472) decorate "Polyline" at (2,0) {
+  			id _XE8OgNMfEeWJV9QOcxWQYg
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _MxJckPzPEeaVBcOQNPoz0Q  decorate "Polyline" at (2,0) {
+  		id _aPG2gPzPEeaVBcOQNPoz0Q
+  		concurrent true
+  	}
+  }
+  
+  Branch _VlIooNMfEeWJV9QOcxWQYg at 350,510 size 100,25 {
+  	name "removed"
+  	-ControlFlow-> _POR0QNMfEeWJV9QOcxWQYg  decorate "Polyline" at (2,0) {
+  		id _hwfLMNMfEeWJV9QOcxWQYg
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _POR0QNMfEeWJV9QOcxWQYg at 350,560 size 100,65 {
+  	branchName "removed"
+  }
+  
+  RemoveFromListSIB _Vk8bYNMfEeWJV9QOcxWQYg at 325,380 size 150,108 {
+  	label "RemoveFromList"
+  	libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	ignoredBranch [ IgnoreBranch _6eGgAGITEeqRt5AQQVR6Ng {
+  			name "not found"
+  		} ]
+  	ComplexInputPort _Vk_esNMfEeWJV9QOcxWQYg at 5,67 size 140,18 {
+  		name "list"
+  		isList true
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	
+  	ComplexInputPort _VlDJENMfEeWJV9QOcxWQYg at 5,85 size 140,18 {
+  		name "element"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _VlIooNMfEeWJV9QOcxWQYg   {
+  		id _VlKd0NMfEeWJV9QOcxWQYg
+  		concurrent true
+  	}
+  }
+  
+  DataContext _POP_ENMfEeWJV9QOcxWQYg at 50,200 size 180,145 {
+  	dfViewWorkaround true
+  	ComplexVariable _T2GT8NMfEeWJV9QOcxWQYg at 10,30 size 160,25 index 1 {
+  		expanded false
+  		name "todolist"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  		-ComplexAttributeConnector-> _eEmw8N70EeWlD7knc3NOdQ  decorate "Ellipse" at (0,0) {
+  			id _eE0zYN70EeWlD7knc3NOdQ
+  			attributeName "owners"
+  		}
+  	}
+  	
+  	ComplexVariable _eEmw8N70EeWlD7knc3NOdQ at 10,80 size 160,51 index 0 {
+  		expanded false
+  		name "owners"
+  		dfViewWorkaround true
+  		isList true
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		PrimitiveListAttribute _eE-kYN70EeWlD7knc3NOdQ at 20,23 size 120,25 {
+  			attributeName size
+  			dfViewWorkaround true
+  			primitiveType Integer
+  			libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  			-PrimitiveRead-> _My_PoPzPEeaVBcOQNPoz0Q via (248,316) (248,265) decorate "Polyline" at (2,0) {
+  				id _kOcdAN70EeWlD7knc3NOdQ
+  				dfViewWorkaround true
+  			}
+  		}
+  		-ComplexRead-> _Vk_esNMfEeWJV9QOcxWQYg via (139,455) decorate "Polyline" at (2,0) {
+  			id _epcjYN70EeWlD7knc3NOdQ
+  			dfViewWorkaround true
+  		}
+  	}
+  }
+  
+  EndSIB _XvtEYN70EeWlD7knc3NOdQ at 520,560 size 100,65 {
+  	branchName "not removed"
+  }
+  
+  AtomicSIB _MxJckPzPEeaVBcOQNPoz0Q at 340,190 size 120,108 {
+  	label "IntegerEquals"
+  	libraryComponentUID "common.IntegerEquals"
+  	ignoredBranch [ IgnoreBranch _4HIBkGITEeqRt5AQQVR6Ng {
+  			name "failure"
+  		}, IgnoreBranch _4seKUGITEeqRt5AQQVR6Ng {
+  			name "noresult"
+  		} ]
+  	PrimitiveInputPort _My_PoPzPEeaVBcOQNPoz0Q at 5,67 size 110,18 index 1 {
+  		dataType Integer
+  		name "a"
+  		isList false
+  	}
+  	
+  	IntegerInputStatic _uFVaEPzPEeaVBcOQNPoz0Q at 5,85 size 110,18 index 0 {
+  		name "b"
+  		value 1
+  	}
+  	-BranchConnector-> _Mz_8QPzPEeaVBcOQNPoz0Q   {
+  		id _M0IfIPzPEeaVBcOQNPoz0Q
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _M0Pz4PzPEeaVBcOQNPoz0Q   {
+  		id _M0UsYPzPEeaVBcOQNPoz0Q
+  		concurrent true
+  	}
+  }
+  
+  Branch _M0Pz4PzPEeaVBcOQNPoz0Q at 340,330 size 120,25 index 8 {
+  	name "false"
+  	-ControlFlow-> _Vk8bYNMfEeWJV9QOcxWQYg  decorate "Polyline" at (2,0) {
+  		id _Sb-4cPzPEeaVBcOQNPoz0Q
+  		concurrent true
+  	}
+  }
+  
+  Branch _Mz_8QPzPEeaVBcOQNPoz0Q at 510,231 size 120,25 index 7 {
+  	name "true"
+  	-ControlFlow-> _XvtEYN70EeWlD7knc3NOdQ  decorate "Polyline" at (2,0) {
+  		id _RadKAPzPEeaVBcOQNPoz0Q
+  		concurrent true
+  	}
+  }
+}

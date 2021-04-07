@@ -1,0 +1,86 @@
+Process _wCKzANMdEeWJV9QOcxWQYg {
+  modelName "DeleteTODO"
+  description "DeleteTODO"
+  dataFlowView true
+  processType Basic
+  isStateful false
+  StartSIB _wCQSkNMdEeWJV9QOcxWQYg at 350,50 size 121,108 {
+  	ComplexOutputPort _xwadgNMdEeWJV9QOcxWQYg at 5,67 size 111,18 {
+  		name "list"
+  		isList false
+  		libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  		-ComplexUpdate-> _DaBGkNMgEeWJV9QOcxWQYg via (190,126) decorate "Polyline" at (2,0) {
+  			id _H34ZANMgEeWJV9QOcxWQYg
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	ComplexOutputPort _zllPYNMdEeWJV9QOcxWQYg at 5,85 size 111,18 {
+  		name "entryToDelete"
+  		isList false
+  		libraryComponentUID "_t3jPkMwMEeWZVvvwxpYu8A"
+  		-ComplexDirectDataFlow-> _GWL8wNMgEeWJV9QOcxWQYg via (316,144) (316,285) decorate "Polyline" at (2,0) {
+  			id _HYH64NMgEeWJV9QOcxWQYg
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _GWEoANMgEeWJV9QOcxWQYg  decorate "Polyline" at (2,0) {
+  		id _KI1H8NMgEeWJV9QOcxWQYg
+  		concurrent true
+  	}
+  }
+  
+  RemoveFromListSIB _GWEoANMgEeWJV9QOcxWQYg at 336,190 size 150,108 {
+  	label "RemoveFromList"
+  	libraryComponentUID "_t3jPkMwMEeWZVvvwxpYu8A"
+  	ignoredBranch [ IgnoreBranch _oD7qwGITEeqRt5AQQVR6Ng {
+  			name "not found"
+  		} ]
+  	ComplexInputPort _GWHrUNMgEeWJV9QOcxWQYg at 5,67 size 140,18 {
+  		name "list"
+  		isList true
+  		libraryComponentUID "_t3jPkMwMEeWZVvvwxpYu8A"
+  	}
+  	
+  	ComplexInputPort _GWL8wNMgEeWJV9QOcxWQYg at 5,85 size 140,18 {
+  		name "element"
+  		isList false
+  		libraryComponentUID "_t3jPkMwMEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _GWQOMNMgEeWJV9QOcxWQYg   {
+  		id _GWSqcNMgEeWJV9QOcxWQYg
+  		concurrent true
+  	}
+  }
+  
+  DataContext _B51tQNMgEeWJV9QOcxWQYg at 100,200 size 180,111 {
+  	dfViewWorkaround true
+  	ComplexVariable _DaBGkNMgEeWJV9QOcxWQYg at 10,30 size 161,51 {
+  		expanded false
+  		name "todolist"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  		ComplexAttribute _EWD4ENMgEeWJV9QOcxWQYg at 20,23 size 121,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_Ajon8M5BEeWKGIrSDzlNog"
+  			-ComplexRead-> _GWHrUNMgEeWJV9QOcxWQYg  decorate "Polyline" at (2,0) {
+  				id _G84JUNMgEeWJV9QOcxWQYg
+  				dfViewWorkaround true
+  			}
+  		}
+  	}
+  }
+  
+  Branch _GWQOMNMgEeWJV9QOcxWQYg at 361,310 size 100,25 {
+  	name "removed"
+  	-ControlFlow-> _wCQ5oNMdEeWJV9QOcxWQYg  decorate "Polyline" at (2,0) {
+  		id _JLdgwNMgEeWJV9QOcxWQYg
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _wCQ5oNMdEeWJV9QOcxWQYg at 361,360 size 100,65 {
+  	branchName "success"
+  }
+}

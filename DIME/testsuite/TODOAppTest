@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://127.0.0.1:8080/" />
+<title>TODOAppTest</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TODOAppTest</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/app/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=username</td>
+	<td>peter</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=password</td>
+	<td>pwd</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='wrapper']/div/div/div/div/div/div/h1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.form-control</td>
+	<td>Test1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.text-left</td>
+	<td>Test1</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=form-_vof6spvueewwodzolky4iq-addtodo &gt; form &gt; div.row &gt; div.col-sm-12 &gt; div.form-group &gt; input.form-control</td>
+	<td>TestTodoEntry</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=td &gt; div.row &gt; div.col-sm-12 &gt; span &gt; span.text-left</td>
+	<td>TestTodoEntry</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=_LGLJ4Py1EeWB0q9jTolRA</td>
+	<td>label=J. Jonah</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form-_uynhcpvueewwodzolky4iq-addowner &gt; form &gt; div.row &gt; div.col-sm-12 &gt; button.btn.btn-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='_T77ycN7hEeW7MO8ocVWj8Q']/div/div/div/div/div[2]/div/div/table-_5a2fepvteewwodzolky4iq-manageowners/div/table/tbody/tr[2]/td/div/div/span/span</td>
+	<td>J. Jonah</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotText</td>
+	<td>//div[@id='_T77ycN7hEeW7MO8ocVWj8Q']/div/div/div/div/div[2]/div/div/table-_5a2fepvteewwodzolky4iq-manageowners/div/table/tbody/tr[2]/td/div/div/span/span</td>
+	<td>J. Jonah</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.col-sm-12 &gt; div..btn-group &gt; div.btn-group &gt; button.btn.btn-danger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotText</td>
+	<td>css=td &gt; div.row &gt; div.col-sm-12 &gt; span &gt; span.text-left</td>
+	<td>TestTodoEntry</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-danger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/app/logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1</td>
+	<td>Please login...</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

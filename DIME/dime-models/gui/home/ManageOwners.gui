@@ -1,0 +1,282 @@
+GUI _T77ycN7hEeW7MO8ocVWj8Q {
+  title "ManageOwners"
+  additionalStylesheets [  ]
+  additionalJavaScript [  ]
+  fullWidth false
+  Template _T8Kb8N7hEeW7MO8ocVWj8Q at 270,60 size 780,458 {
+  	blockName "body"
+  	Panel _vLjZgPvtEeWWodZOLky4iQ at 10,30 size 760,280 {
+  		collapsable false
+  		defaultOpen "true"
+  		heading [ StaticContent {
+  				rawContent "Owners"
+  				maxChars 0
+  				html false
+  			} ]
+  		footer [  ]
+  		coloring ComponentColoring {
+  				color Default
+  			}
+  		generalStyle GeneralStyling {
+  				marginTop Single
+  				marginBottom Single
+  				tallness Fitting
+  				attributes [  ]
+  			}
+  		MoveUp _vLoSAPvtEeWWodZOLky4iQ at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _vLpgIPvtEeWWodZOLky4iQ at 2,10 size 14,7 {
+  		}
+  		
+  		Table _5a2fEPvtEeWWodZOLky4iQ at 10,30 size 740,220 {
+  			striped true
+  			bordered false
+  			hover true
+  			condensed true
+  			responsive true
+  			numbering false
+  			pagination 0
+  			choices NONE
+  			generalStyle GeneralStyling {
+  					marginTop None
+  					marginBottom None
+  					tallness Fitting
+  					attributes [  ]
+  				}
+  			MoveUp _5a7XkPvtEeWWodZOLky4iQ at 2,2 size 14,7 {
+  			}
+  			
+  			MoveDown _5a7-oPvtEeWWodZOLky4iQ at 2,10 size 14,7 {
+  			}
+  			
+  			TableEntry _6GpOEPvtEeWWodZOLky4iQ at 10,30 size 220,120 {
+  				label "First Name"
+  				sortable false
+  				fullTextSearch false
+  				generalStyle GeneralStyling {
+  						marginTop None
+  						marginBottom None
+  						tallness Fitting
+  						attributes [  ]
+  					}
+  				MoveLeft _6GutoPvtEeWWodZOLky4iQ at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _6Gv7wPvtEeWWodZOLky4iQ at 10,2 size 7,14 {
+  				}
+  				
+  				Text _-0QMsPvtEeWWodZOLky4iQ at 10,30 size 200,60 {
+  					content [ StaticContent {
+  							rawContent "{{currentOwner.baseUser.firstName}}"
+  							maxChars 0
+  							html false
+  						} ]
+  					generalStyle GeneralStyling {
+  							marginTop None
+  							marginBottom None
+  							tallness Fitting
+  							attributes [  ]
+  						}
+  					MoveUp _-0WTUPvtEeWWodZOLky4iQ at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _-0W6YPvtEeWWodZOLky4iQ at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  			
+  			TableEntry _6mUMoPvtEeWWodZOLky4iQ at 240,30 size 220,120 {
+  				label "Last Name"
+  				sortable false
+  				fullTextSearch false
+  				generalStyle GeneralStyling {
+  						marginTop None
+  						marginBottom None
+  						tallness Fitting
+  						attributes [  ]
+  					}
+  				MoveLeft _6maTQPvtEeWWodZOLky4iQ at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _6ma6UPvtEeWWodZOLky4iQ at 10,2 size 7,14 {
+  				}
+  				
+  				Text __LSzsPvtEeWWodZOLky4iQ at 10,30 size 200,60 {
+  					content [ StaticContent {
+  							rawContent "{{currentOwner.baseUser.lastName}}"
+  							maxChars 0
+  							html false
+  						} ]
+  					generalStyle GeneralStyling {
+  							marginTop None
+  							marginBottom None
+  							tallness Fitting
+  							attributes [  ]
+  						}
+  					MoveUp __LZhYPvtEeWWodZOLky4iQ at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown __LaIcPvtEeWWodZOLky4iQ at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  			
+  			TableEntry _7FOWMPvtEeWWodZOLky4iQ at 470,30 size 250,170 {
+  				label "Actions"
+  				sortable false
+  				fullTextSearch false
+  				generalStyle GeneralStyling {
+  						marginTop None
+  						marginBottom None
+  						tallness Fitting
+  						attributes [  ]
+  					}
+  				MoveLeft _7FVq8PvtEeWWodZOLky4iQ at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _7FWSAPvtEeWWodZOLky4iQ at 10,2 size 7,14 {
+  				}
+  				
+  				ButtonGroup __1oxMPvtEeWWodZOLky4iQ at 10,30 size 230,110 {
+  					alignment horizontal
+  					size Default
+  					generalStyle GeneralStyling {
+  							marginTop None
+  							marginBottom None
+  							tallness Fitting
+  							attributes [  ]
+  						}
+  					MoveUp __1ve4PvtEeWWodZOLky4iQ at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown __1wF8PvtEeWWodZOLky4iQ at 2,10 size 14,7 {
+  					}
+  					
+  					Button __11lgPvtEeWWodZOLky4iQ at 10,30 size 200,60 {
+  						label "Remove Owner"
+  						displayLabel " "
+  						styling ButtonStyling {
+  								fullWidth false
+  								size Default
+  								disabled false
+  								color Red
+  							}
+  						options ButtonOptions {
+  								isLink false
+  							}
+  						disabled false
+  						icon Icon {
+  								preIcon Trash
+  								postIcon None
+  							}
+  						generalStyle GeneralStyling {
+  								marginTop None
+  								marginBottom None
+  								tallness Fitting
+  								attributes [  ]
+  							}
+  						MoveLeft __186QPvtEeWWodZOLky4iQ at 2,2 size 7,14 {
+  						}
+  						
+  						MoveRight __19hUPvtEeWWodZOLky4iQ at 10,2 size 7,14 {
+  						}
+  					}
+  				}
+  			}
+  		}
+  	}
+  	
+  	GUISIB _hj_HEN7iEeW7MO8ocVWj8Q at 10,320 size 150,108 {
+  		name "AddOwner"
+  		libraryComponentUID "_LIjH8NvFEeWsF7MALrkAZQ"
+  		label "AddOwner"
+  		generalStyle GeneralStyling {
+  				marginTop None
+  				marginBottom None
+  				tallness Fitting
+  				attributes [  ]
+  			}
+  		ComplexInputPort _hkigsN7iEeW7MO8ocVWj8Q at 5,85 size 90,18 {
+  			libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  			isList false
+  			name "currentList"
+  		}
+  		
+  		MoveUp _hk_zsN7iEeW7MO8ocVWj8Q at 2,2 size 15,15 {
+  		}
+  		
+  		MoveDown _hlCP8N7iEeW7MO8ocVWj8Q at 17,2 size 15,15 {
+  		}
+  		
+  		ComplexInputPort _hkPlwN7iEeW7MO8ocVWj8Q at 5,67 size 90,18 {
+  			libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  			isList true
+  			name "users"
+  		}
+  	}
+  }
+  
+  DataContext _r7POwN7iEeW7MO8ocVWj8Q at 1160,250 size 200,261 {
+  	dfViewWorkaround true
+  	ComplexVariable _ZZMP4N7iEeW7MO8ocVWj8Q at 10,40 size 140,25 {
+  		expanded false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		dfViewWorkaround true
+  		name "owners"
+  		isList true
+  		isInput true
+  		-ComplexListAttributeConnector-> _vDo4MN7kEeW7MO8ocVWj8Q  decorate "Ellipse" at (0,0) {
+  			id _vEB5wN7kEeW7MO8ocVWj8Q
+  			attributeName current
+  		}
+  		
+  		-TableLoad-> _5a2fEPvtEeWWodZOLky4iQ  decorate "Polyline" at (2,0) {
+  			id _0UVVwN7kEeW7MO8ocVWj8Q
+  		}
+  	}
+  	
+  	ComplexVariable _vDo4MN7kEeW7MO8ocVWj8Q at 10,80 size 140,25 {
+  		expanded false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		dfViewWorkaround true
+  		name "currentOwner"
+  		isList false
+  		isInput false
+  		-AddComplexToSubmission-> __11lgPvtEeWWodZOLky4iQ  decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
+  			id _zy3ncN7kEeW7MO8ocVWj8Q
+  		}
+  	}
+  	
+  	ComplexVariable _mr_isN7iEeW7MO8ocVWj8Q at 10,160 size 140,25 {
+  		expanded false
+  		libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  		dfViewWorkaround true
+  		name "currentList"
+  		isList false
+  		isInput true
+  		-ComplexRead-> _hkigsN7iEeW7MO8ocVWj8Q via (939,589) (257,589) (257,563) decorate "Polyline" at (2,0) {
+  			id _ovnAQN7iEeW7MO8ocVWj8Q
+  		}
+  		
+  		-AddComplexToSubmission-> __11lgPvtEeWWodZOLky4iQ  decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
+  			id _9Z-WgN7iEeW7MO8ocVWj8Q
+  		}
+  	}
+  }
+  
+  DataContext _T8FjcN7hEeW7MO8ocVWj8Q at 20,500 size 200,91 {
+  	dfViewWorkaround true
+  	ComplexVariable _i8oVAN7iEeW7MO8ocVWj8Q at 20,40 size 140,25 {
+  		expanded false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		dfViewWorkaround true
+  		name "users"
+  		isList true
+  		isInput true
+  		-ComplexRead-> _hkPlwN7iEeW7MO8ocVWj8Q  decorate "Polyline" at (2,0) {
+  			id _lzxhQN7iEeW7MO8ocVWj8Q
+  		}
+  	}
+  }
+}

@@ -1,0 +1,29 @@
+DAD _9G1SoMwLEeWZVvvwxpYu8A {
+  appName "TODO DIME Example App"
+  Start _9xD7YMwLEeWZVvvwxpYu8A at 250,100 size 30,30 {
+  	-RootInteractionPointer-> _BU_fsMwNEeWZVvvwxpYu8A  decorate "Polyline" at (2,0) {
+  		id _B4M6cMwNEeWZVvvwxpYu8A
+  	}
+  	
+  	-StartupProcessPointer-> _e0kD8NvjEeWvrN7BnrpCFw  decorate "Polyline" at (2,0) {
+  		id _fbjygNvjEeWvrN7BnrpCFw
+  	}
+  }
+  
+  ProcessComponent _e0kD8NvjEeWvrN7BnrpCFw at 30,149 size 128,32 {
+  	libraryComponentUID "_sA1GYNviEeWsF7MALrkAZQ"
+  }
+  
+  ProcessComponent _BU_fsMwNEeWZVvvwxpYu8A at 170,211 size 128,32 {
+    url "app"
+  	libraryComponentUID "_YCj5QMwMEeWZVvvwxpYu8A"
+  }
+  
+  SystemUser _kYCLsMwNEeWZVvvwxpYu8A at 330,118 size 128,32 {
+  	libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  }
+  
+  DataComponent _F_rGIMwNEeWZVvvwxpYu8A at 320,180 size 128,32 {
+  	libraryComponentUID "_tH3fEMwMEeWZVvvwxpYu8A"
+  }
+}

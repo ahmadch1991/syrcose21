@@ -1,0 +1,246 @@
+Process _l6zBwNMaEeWJV9QOcxWQYg {
+  modelName "GetAllUsers"
+  description "GetAllUsers"
+  dataFlowView true
+  processType Basic
+  isStateful false
+  RetrieveOfTypeSIB _n_xKMNMaEeWJV9QOcxWQYg at 272,136 size 150,65 {
+  	label "Retrieve all ConcreteUser"
+  	libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	ignoredBranch [  ]
+  	-BranchConnector-> _n__zsNMaEeWJV9QOcxWQYg   {
+  		id _oACP8NMaEeWJV9QOcxWQYg
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _oAGhYNMaEeWJV9QOcxWQYg   {
+  		id _oAIWkNMaEeWJV9QOcxWQYg
+  		concurrent true
+  	}
+  }
+  
+  DataContext _l7BEMNMaEeWJV9QOcxWQYg at 20,200 size 180,421 {
+  	dfViewWorkaround true
+  	ComplexVariable _ptwWANMaEeWJV9QOcxWQYg at 20,40 size 140,25 index 3 {
+  		expanded false
+  		name "allUsers"
+  		dfViewWorkaround true
+  		isList true
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexRead-> _Zf1CkNowEeWXToNFm-DPVA via (208,278) (288,391) decorate "Polyline" at (2,0) {
+  			id _Ao9tgNMbEeWJV9QOcxWQYg
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	ComplexVariable _kHSwgNowEeWXToNFm-DPVA at 20,380 size 150,25 index 0 {
+  		expanded false
+  		name "realUsers"
+  		dfViewWorkaround true
+  		isList true
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexRead-> _-jAGkNMaEeWJV9QOcxWQYg via (115,965) decorate "Polyline" at (2,0) {
+  			id _nSZakNowEeWXToNFm-DPVA
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	ComplexVariable _V4Sz0NozEeWXToNFm-DPVA at 10,250 size 160,25 index 1 {
+  		expanded false
+  		name "concreteuser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexRead-> _fyK4cNoyEeWXToNFm-DPVA via (247,520) (247,754) decorate "Polyline" at (2,0) {
+  			id _xdRy0NozEeWXToNFm-DPVA
+  			dfViewWorkaround true
+  		}
+  		
+  		-ComplexAttributeConnector-> _HsGr0No8EeWXToNFm-DPVA  decorate "Ellipse" at (0,0) {
+  			id _HsSSANo8EeWXToNFm-DPVA
+  			attributeName "baseUser"
+  		}
+  	}
+  	
+  	ComplexVariable _HsGr0No8EeWXToNFm-DPVA at 10,300 size 160,51 index 2 {
+  		expanded false
+  		name "baseUser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  		PrimitiveAttribute _HtADsNo8EeWXToNFm-DPVA at 20,23 size 120,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_YIIgUMwNEeWZVvvwxpYu8A"
+  			-PrimitiveRead-> _Exe0IPzLEea654knbZORoQ via (209,537) (381,596) decorate "Polyline" at (2,0) {
+  				id _fFbisNo8EeWXToNFm-DPVA
+  				dfViewWorkaround true
+  			}
+  		}
+  	}
+  }
+  
+  StartSIB _l7GjwNMaEeWJV9QOcxWQYg at 297,25 size 100,65 {
+  	-ControlFlow-> _n_xKMNMaEeWJV9QOcxWQYg  decorate "Polyline" at (2,0) {
+  		id _oh7cENMaEeWJV9QOcxWQYg
+  		concurrent true
+  	}
+  }
+  
+  Branch _oAGhYNMaEeWJV9QOcxWQYg at 250,281 size 100,25 {
+  	name "none found"
+  	-ControlFlow-> _l7LcQNMaEeWJV9QOcxWQYg via (300,846) decorate "Polyline" at (2,0) {
+  		id _p1ylwNMcEeWJV9QOcxWQYg
+  		concurrent true
+  	}
+  }
+  
+  IterateSIB _ZdijkNowEeWXToNFm-DPVA at 324,316 size 150,90 {
+  	label "Iterate ConcreteUsers"
+  	libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	ignoredBranch [  ]
+  	ComplexInputPort _Zf1CkNowEeWXToNFm-DPVA at 5,67 size 140,18 {
+  		name "list"
+  		isList true
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _Zgr-MNowEeWXToNFm-DPVA   {
+  		id _ZgvBgNowEeWXToNFm-DPVA
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _ZgPSQNowEeWXToNFm-DPVA   {
+  		id _Zgd7wNowEeWXToNFm-DPVA
+  		concurrent true
+  	}
+  }
+  
+  Branch _n__zsNMaEeWJV9QOcxWQYg at 349,221 size 100,50 {
+  	name "success"
+  	ComplexOutputPort _oAC3ANMaEeWJV9QOcxWQYg at 5,27 size 90,18 {
+  		name "retrieved"
+  		isList true
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexUpdate-> _ptwWANMaEeWJV9QOcxWQYg  decorate "Polyline" at (2,0) {
+  			id _rSCzQNMaEeWJV9QOcxWQYg
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _ZdijkNowEeWXToNFm-DPVA  decorate "Polyline" at (2,0) {
+  		id _qH63kNMcEeWJV9QOcxWQYg
+  		concurrent true
+  	}
+  }
+  
+  Branch _Zgr-MNowEeWXToNFm-DPVA at 310,440 size 100,25 {
+  	name "exit"
+  	-ControlFlow-> _l7LcQNMaEeWJV9QOcxWQYg via (359,847) decorate "Polyline" at (2,0) {
+  		id _jCXv0NowEeWXToNFm-DPVA
+  		concurrent true
+  	}
+  }
+  
+  Branch _ZgPSQNowEeWXToNFm-DPVA at 433,440 size 100,50 {
+  	name "next"
+  	ComplexOutputPort _Zgfw8NowEeWXToNFm-DPVA at 5,27 size 90,18 {
+  		name "element"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexUpdate-> _V4Sz0NozEeWXToNFm-DPVA  decorate "Polyline" at (2,0) {
+  			id _YBgjENozEeWXToNFm-DPVA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _Ew-d0PzLEea654knbZORoQ  decorate "Polyline" at (2,0) {
+  		id _yqg9kNrZEeWMhNBgADQjmw
+  		concurrent true
+  	}
+  }
+  
+  PutToContextSIB _eptbkNoyEeWXToNFm-DPVA at 408,678 size 150,90 {
+  	label "PutToContext"
+  	ignoredBranch [  ]
+  	ComplexInputPort _fyK4cNoyEeWXToNFm-DPVA at 5,67 size 140,18 {
+  		name "user"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _ep5BwNoyEeWXToNFm-DPVA   {
+  		id _ep8FENoyEeWXToNFm-DPVA
+  		concurrent true
+  	}
+  }
+  
+  Branch _ep5BwNoyEeWXToNFm-DPVA at 433,790 size 100,50 {
+  	name "success"
+  	ComplexOutputPort _hcDAUNoyEeWXToNFm-DPVA at 5,27 size 90,18 {
+  		name "user"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexUpdate-> _kHSwgNowEeWXToNFm-DPVA via (226,825) (226,596) decorate "Polyline" at (2,0) {
+  			id _yoQYMNozEeWXToNFm-DPVA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _ZdijkNowEeWXToNFm-DPVA via (747,814) (747,361) decorate "Polyline" at (2,0) {
+  		id _pqz8ENozEeWXToNFm-DPVA
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _l7LcQNMaEeWJV9QOcxWQYg at 280,890 size 100,90 {
+  	branchName "SUccess"
+  	ComplexInputPort _-jAGkNMaEeWJV9QOcxWQYg at 5,67 size 90,18 {
+  		name "allUsers"
+  		isList true
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  }
+  
+  Documentation _UsSq8NsIEeWRErTOXmdXCg at 500,499 size 164,22 {
+  	content "TODO: Remove as soon as "
+  }
+  
+  Documentation _fz-KANsIEeWRErTOXmdXCg at 500,520 size 164,21 {
+  	content "the 'empty-object' issue is fixed."
+  }
+  
+  AtomicSIB _Ew-d0PzLEea654knbZORoQ at 423,531 size 120,90 {
+  	label "TextIsNull"
+  	libraryComponentUID "common.TextIsNull"
+  	ignoredBranch [ IgnoreBranch _ztH7cGITEeqRt5AQQVR6Ng {
+  			name "failure"
+  		}, IgnoreBranch _0ShHgGITEeqRt5AQQVR6Ng {
+  			name "noresult"
+  		} ]
+  	PrimitiveInputPort _Exe0IPzLEea654knbZORoQ at 5,67 size 110,18 {
+  		dataType Text
+  		name "a"
+  		isList false
+  	}
+  	-BranchConnector-> _Ex2AgPzLEea654knbZORoQ   {
+  		id _Ex65APzLEea654knbZORoQ
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _Ex_KcPzLEea654knbZORoQ   {
+  		id _EyDb4PzLEea654knbZORoQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _Ex_KcPzLEea654knbZORoQ at 423,636 size 120,25 index 15 {
+  	name "false"
+  	-ControlFlow-> _eptbkNoyEeWXToNFm-DPVA  decorate "Polyline" at (2,0) {
+  		id _I4UGoPzLEea654knbZORoQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _Ex2AgPzLEea654knbZORoQ at 620,563 size 120,25 index 14 {
+  	name "true"
+  	-ControlFlow-> _ZdijkNowEeWXToNFm-DPVA via (679,360) decorate "Polyline" at (2,0) {
+  		id _Me3WkPzLEea654knbZORoQ
+  		concurrent true
+  	}
+  }
+}

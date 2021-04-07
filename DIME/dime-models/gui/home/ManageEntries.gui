@@ -1,0 +1,259 @@
+GUI _bS1KsN7lEeW7MO8ocVWj8Q {
+  title "ManageEntries"
+  additionalStylesheets [  ]
+  additionalJavaScript [  ]
+  fullWidth false
+  DataContext _bS-UoN7lEeW7MO8ocVWj8Q at 10,260 size 211,211 {
+  	dfViewWorkaround true
+  	ComplexVariable _VLF68N7mEeW7MO8ocVWj8Q at 20,140 size 140,25 {
+  		expanded false
+  		libraryComponentUID "_t3jPkMwMEeWZVvvwxpYu8A"
+  		dfViewWorkaround true
+  		name "currentEntry"
+  		isList false
+  		isInput false
+  		-AddComplexToSubmission-> _9IttYPvsEeWWodZOLky4iQ via (269,413) (269,400) decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
+  			id _H1q_UPvtEeWWodZOLky4iQ
+  		}
+  	}
+  	
+  	ComplexVariable _Qm_doN7mEeW7MO8ocVWj8Q at 20,30 size 140,25 {
+  		expanded false
+  		libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  		dfViewWorkaround true
+  		name "currentList"
+  		isList false
+  		isInput true
+  		-ComplexAttributeConnector-> _Skz1MN7mEeW7MO8ocVWj8Q  decorate "Ellipse" at (0,0) {
+  			id _SlHXMN7mEeW7MO8ocVWj8Q
+  			associationName "entries"
+  		}
+  		
+  		-ComplexRead-> _xceoYPvvEeWWodZOLky4iQ via (234,309) (283,464) decorate "Polyline" at (2,0) {
+  			id _yUVdcPvvEeWWodZOLky4iQ
+  		}
+  		
+  		-AddComplexToSubmission-> _9IttYPvsEeWWodZOLky4iQ via (265,303) (265,400) decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
+  			id _F3CIYPvtEeWWodZOLky4iQ
+  		}
+  	}
+  	
+  	ComplexVariable _Skz1MN7mEeW7MO8ocVWj8Q at 20,70 size 140,51 {
+  		expanded false
+  		libraryComponentUID "_t3jPkMwMEeWZVvvwxpYu8A"
+  		dfViewWorkaround true
+  		name "entries"
+  		isList true
+  		isInput false
+  		PrimitiveListAttribute _SlZEAN7mEeW7MO8ocVWj8Q at 20,23 size 100,25 {
+  			attributeName size
+  			primitiveType Integer
+  			libraryComponentUID "_t3jPkMwMEeWZVvvwxpYu8A"
+  			-IF-> _zOm0sPvsEeWWodZOLky4iQ via (241,352) (241,283) (301,283) decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
+  				id _L46LQPvtEeWWodZOLky4iQ
+  				negate false
+  			}
+  			
+  			-IF-> _ReJ8gPvtEeWWodZOLky4iQ via (246,390) (299,418) decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
+  				id _jeWOsPvxEeWpTJo9kbaIUg
+  				negate true
+  			}
+  		}
+  		-ComplexListAttributeConnector-> _VLF68N7mEeW7MO8ocVWj8Q  decorate "Ellipse" at (0,0) {
+  			id _VLYO0N7mEeW7MO8ocVWj8Q
+  			attributeName current
+  		}
+  		
+  		-TableLoad-> _zOm0sPvsEeWWodZOLky4iQ  decorate "Polyline" at (2,0) {
+  			id _NhiV8PvtEeWWodZOLky4iQ
+  		}
+  	}
+  }
+  
+  Template _bTDNIN7lEeW7MO8ocVWj8Q at 320,70 size 530,510 {
+  	blockName "body"
+  	Text _ReJ8gPvtEeWWodZOLky4iQ at 10,320 size 200,60 {
+  		content [ StaticContent {
+  				rawContent "No entries, yet."
+  				maxChars 0
+  				html false
+  			} ]
+  		generalStyle GeneralStyling {
+  				marginTop None
+  				marginBottom None
+  				tallness Fitting
+  				attributes [  ]
+  			}
+  		MoveUp _ReR4UPvtEeWWodZOLky4iQ at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _ReSfYPvtEeWWodZOLky4iQ at 2,10 size 14,7 {
+  		}
+  	}
+  	
+  	Table _zOm0sPvsEeWWodZOLky4iQ at 10,90 size 510,220 {
+  		striped true
+  		bordered false
+  		hover true
+  		condensed true
+  		responsive true
+  		numbering false
+  		pagination 0
+  		choices NONE
+  		generalStyle GeneralStyling {
+  				marginTop None
+  				marginBottom None
+  				tallness Fitting
+  				attributes [  ]
+  			}
+  		MoveUp _zOs7UPvsEeWWodZOLky4iQ at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _zOuJcPvsEeWWodZOLky4iQ at 2,10 size 14,7 {
+  		}
+  		
+  		TableEntry _3XhK0PvsEeWWodZOLky4iQ at 10,30 size 220,120 {
+  			label "Description"
+  			sortable false
+  			fullTextSearch false
+  			generalStyle GeneralStyling {
+  					marginTop None
+  					marginBottom None
+  					tallness Fitting
+  					attributes [  ]
+  				}
+  			MoveLeft _3Xn4gPvsEeWWodZOLky4iQ at 2,2 size 7,14 {
+  			}
+  			
+  			MoveRight _3XpGoPvsEeWWodZOLky4iQ at 10,2 size 7,14 {
+  			}
+  			
+  			Text _8N4c0PvsEeWWodZOLky4iQ at 10,30 size 200,60 {
+  				content [ StaticContent {
+  						rawContent "{{currentEntry.description}}"
+  						maxChars 0
+  						html false
+  					} ]
+  				generalStyle GeneralStyling {
+  						marginTop None
+  						marginBottom None
+  						tallness Fitting
+  						attributes [  ]
+  					}
+  				MoveUp _8OA_sPvsEeWWodZOLky4iQ at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _8OBmwPvsEeWWodZOLky4iQ at 2,10 size 14,7 {
+  				}
+  			}
+  		}
+  		
+  		TableEntry _5IWPQPvsEeWWodZOLky4iQ at 240,30 size 250,170 {
+  			label "Actions"
+  			sortable false
+  			fullTextSearch false
+  			generalStyle GeneralStyling {
+  					marginTop None
+  					marginBottom None
+  					tallness Fitting
+  					attributes [  ]
+  				}
+  			MoveLeft _5IcV4PvsEeWWodZOLky4iQ at 2,2 size 7,14 {
+  			}
+  			
+  			MoveRight _5Ic88PvsEeWWodZOLky4iQ at 10,2 size 7,14 {
+  			}
+  			
+  			ButtonGroup _9IiHMPvsEeWWodZOLky4iQ at 10,30 size 230,110 {
+  				alignment horizontal
+  				size Default
+  				generalStyle GeneralStyling {
+  						marginTop None
+  						marginBottom None
+  						tallness Fitting
+  						attributes [  ]
+  					}
+  				MoveUp _9IoN0PvsEeWWodZOLky4iQ at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _9Io04PvsEeWWodZOLky4iQ at 2,10 size 14,7 {
+  				}
+  				
+  				Button _9IttYPvsEeWWodZOLky4iQ at 10,30 size 200,60 {
+  					label "Delete TODO"
+  					displayLabel " "
+  					styling ButtonStyling {
+  							fullWidth false
+  							size Default
+  							disabled false
+  							color Red
+  						}
+  					options ButtonOptions {
+  							staticURL ""
+  							isLink false
+  						}
+  					disabled false
+  					icon Icon {
+  							preIcon Trash
+  							postIcon None
+  						}
+  					generalStyle GeneralStyling {
+  							marginTop None
+  							marginBottom None
+  							tallness Fitting
+  							attributes [  ]
+  						}
+  					MoveLeft _9I0bEPvsEeWWodZOLky4iQ at 2,2 size 7,14 {
+  					}
+  					
+  					MoveRight _9I1pMPvsEeWWodZOLky4iQ at 10,2 size 7,14 {
+  					}
+  				}
+  			}
+  		}
+  	}
+  	
+  	GUISIB _xcZI0PvvEeWWodZOLky4iQ at 10,390 size 150,90 {
+  		name "AddTODO"
+  		libraryComponentUID "_YwQ5kN7gEeW7MO8ocVWj8Q"
+  		label "AddTODO"
+  		generalStyle GeneralStyling {
+  				marginTop None
+  				marginBottom None
+  				tallness Fitting
+  				attributes [  ]
+  			}
+  		MoveUp _xcpngPvvEeWWodZOLky4iQ at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _xcqOkPvvEeWWodZOLky4iQ at 2,10 size 14,7 {
+  		}
+  		
+  		ComplexInputPort _xceoYPvvEeWWodZOLky4iQ at 5,67 size 90,18 {
+  			libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  			isList false
+  			name "currentList"
+  		}
+  	}
+  	
+  	Headline _uwLhkPvsEeWWodZOLky4iQ at 10,30 size 200,50 {
+  		size Medium
+  		content [ StaticContent {
+  				rawContent "Entries:"
+  				maxChars 0
+  				html false
+  			} ]
+  		generalStyle GeneralStyling {
+  				marginTop None
+  				marginBottom None
+  				tallness Fitting
+  				attributes [  ]
+  			}
+  		MoveUp _uwSPQPvsEeWWodZOLky4iQ at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _uwTdYPvsEeWWodZOLky4iQ at 2,10 size 14,7 {
+  		}
+  	}
+  }
+}

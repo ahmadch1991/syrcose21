@@ -1,0 +1,126 @@
+GUI _YwQ5kN7gEeW7MO8ocVWj8Q {
+  title "AddTODO"
+  additionalStylesheets [  ]
+  additionalJavaScript [  ]
+  fullWidth false
+  Template _YyAmAN7gEeW7MO8ocVWj8Q at 260,130 size 240,250  {
+  	blockName "body"
+  	Form _vOF6sPvuEeWWodZOLky4iQ at 10,30 size 220,190  {
+  		inline false
+  		errorMessage ""
+  		generalStyle GeneralStyling {
+  				marginTop None
+  				marginBottom Single
+  				tallness Fitting
+  				attributes [  ]
+  			}
+  		MoveUp _vOHv4PvuEeWWodZOLky4iQ at 2,2 size 14,7  {
+  		}
+  		
+  		MoveDown _vOIW8PvuEeWWodZOLky4iQ at 2,10 size 14,7  {
+  		}
+  		
+  		Field _wePT8PvuEeWWodZOLky4iQ at 10,30 size 200,60  {
+  			label "Description"
+  			inputType Text
+  			styling FormFieldStyling {
+  					size Default
+  					disabled false
+  					color Default
+  				}
+  			validation FormFieldValidation {
+  					required false
+  					min 0
+  					max -1
+  				}
+  			additionalOptions FormFieldAdditionalOptions {
+  					emptyValue "e.g. grab some apples"
+  					readonly false
+  				}
+  			disabled false
+  			icon Icon {
+  					preIcon None
+  					postIcon None
+  				}
+  			generalStyle GeneralStyling {
+  					marginTop None
+  					marginBottom None
+  					tallness Fitting
+  					attributes [  ]
+  				}
+  			MoveUp _weS-UPvuEeWWodZOLky4iQ at 2,2 size 14,7  {
+  			}
+  			
+  			MoveDown _weTlYPvuEeWWodZOLky4iQ at 2,10 size 14,7  {
+  			}
+  		}
+  		
+  		Button _vOKzMPvuEeWWodZOLky4iQ at 10,100 size 200,60  {
+  			label "Add TODO"
+  			displayLabel "TODO"
+  			styling ButtonStyling {
+  					fullWidth false
+  					size Default
+  					disabled false
+  					color Green
+  				}
+  			options ButtonOptions {
+  					isLink false
+  					submitsForm true
+  				}
+  			disabled false
+  			icon Icon {
+  					preIcon Plus
+  					postIcon None
+  				}
+  			generalStyle GeneralStyling {
+  					marginTop None
+  					marginBottom None
+  					tallness Fitting
+  					attributes [  ]
+  				}
+  			MoveUp _vOMoYPvuEeWWodZOLky4iQ at 2,2 size 14,7  {
+  			}
+  			
+  			MoveDown _vONPcPvuEeWWodZOLky4iQ at 2,10 size 14,7  {
+  			}
+  		}
+  	}
+  }
+  
+  DataContext _YxawIN7gEeW7MO8ocVWj8Q at 10,210 size 200,151  {
+  	dfViewWorkaround true
+  	ComplexVariable _1D5HQN7gEeW7MO8ocVWj8Q at 20,100 size 140,25  {
+  		isLive false
+  		expanded false
+  		libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  		dfViewWorkaround true
+  		name "currentList"
+  		isList false
+  		isInput true
+  		-AddComplexToSubmission-> _vOKzMPvuEeWWodZOLky4iQ  decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
+  			id _43TugN7gEeW7MO8ocVWj8Q
+  		}
+  	}
+  	
+  	ComplexVariable _r1e28N7gEeW7MO8ocVWj8Q at 20,30 size 140,51  {
+  		isLive false
+  		expanded false
+  		libraryComponentUID "_t3jPkMwMEeWZVvvwxpYu8A"
+  		dfViewWorkaround true
+  		name "newEntry"
+  		isList false
+  		isInput false
+  		PrimitiveAttribute _swdRcN7gEeW7MO8ocVWj8Q at 20,23 size 100,25  {
+  			libraryComponentUID "_v85ygMwMEeWZVvvwxpYu8A"
+  			isLive false
+  			-FormSubmit-> _wePT8PvuEeWWodZOLky4iQ  decorate "Polyline" at (2,0) {
+  				id _t2kk8N7gEeW7MO8ocVWj8Q
+  			}
+  		}
+  		-AddComplexToSubmission-> _vOKzMPvuEeWWodZOLky4iQ  decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
+  			id _vrYxgN7gEeW7MO8ocVWj8Q
+  		}
+  	}
+  }
+}

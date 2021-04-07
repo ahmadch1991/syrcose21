@@ -1,0 +1,117 @@
+GUI _hGBmcN7nEeW7MO8ocVWj8Q {
+  title "AddList"
+  additionalStylesheets [  ]
+  additionalJavaScript [  ]
+  fullWidth false
+  Template _hGPB0N7nEeW7MO8ocVWj8Q at 260,20 size 240,250  {
+  	blockName "body"
+  	Form _ArJncPvvEeWWodZOLky4iQ at 10,30 size 220,190  {
+  		inline false
+  		errorMessage ""
+  		generalStyle GeneralStyling {
+  				marginTop None
+  				marginBottom None
+  				tallness Fitting
+  				attributes [  ]
+  			}
+  		MoveUp _ArLcoPvvEeWWodZOLky4iQ at 2,2 size 14,7  {
+  		}
+  		
+  		MoveDown _ArMDsPvvEeWWodZOLky4iQ at 2,10 size 14,7  {
+  		}
+  		
+  		Button _ArN44PvvEeWWodZOLky4iQ at 10,100 size 200,60  {
+  			label "Add List"
+  			displayLabel "List"
+  			styling ButtonStyling {
+  					fullWidth false
+  					size Default
+  					disabled false
+  					color Green
+  				}
+  			options ButtonOptions {
+  					isLink false
+  					submitsForm true
+  				}
+  			disabled false
+  			icon Icon {
+  					preIcon Plus
+  					postIcon None
+  				}
+  			generalStyle GeneralStyling {
+  					marginTop None
+  					marginBottom None
+  					tallness Fitting
+  					attributes [  ]
+  				}
+  			MoveUp _ArPuEPvvEeWWodZOLky4iQ at 2,2 size 14,7  {
+  			}
+  			
+  			MoveDown _ArQVIPvvEeWWodZOLky4iQ at 2,10 size 14,7  {
+  			}
+  		}
+  		
+  		Field _BNRdEPvvEeWWodZOLky4iQ at 10,30 size 200,60  {
+  			label "Description"
+  			inputType Text
+  			styling FormFieldStyling {
+  					size Default
+  					disabled false
+  					color Default
+  				}
+  			validation FormFieldValidation {
+  					required false
+  					min 0
+  					max -1
+  				}
+  			additionalOptions FormFieldAdditionalOptions {
+  					emptyValue "e.g. Shopping"
+  					readonly false
+  				}
+  			disabled false
+  			icon Icon {
+  					preIcon None
+  					postIcon None
+  				}
+  			generalStyle GeneralStyling {
+  					marginTop None
+  					marginBottom None
+  					tallness Fitting
+  					attributes [  ]
+  				}
+  			MoveUp _BNT5UPvvEeWWodZOLky4iQ at 2,2 size 14,7  {
+  			}
+  			
+  			MoveDown _BNUgYPvvEeWWodZOLky4iQ at 2,10 size 14,7  {
+  			}
+  		}
+  	}
+  }
+  
+  DataContext _hGKwYN7nEeW7MO8ocVWj8Q at 10,110 size 200,160  {
+  	dfViewWorkaround true
+  	ComplexVariable _zqAfAN7nEeW7MO8ocVWj8Q at 20,30 size 171,51  {
+  		isLive false
+  		expanded false
+  		libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  		dfViewWorkaround true
+  		name "newList"
+  		isList false
+  		isInput false
+  		PrimitiveAttribute _14xcoN7nEeW7MO8ocVWj8Q at 20,23 size 131,25  {
+  			libraryComponentUID "_8ZEsAM5AEeWKGIrSDzlNog"
+  			isLive false
+  			-FormSubmit-> _BNRdEPvvEeWWodZOLky4iQ  decorate "Polyline" at (2,0) {
+  				id _2nrxEN7nEeW7MO8ocVWj8Q
+  			}
+  		}
+  		-FormSubmit-> _ArJncPvvEeWWodZOLky4iQ  decorate "Polyline" at (2,0) {
+  			id _cvXqsPvwEeWWodZOLky4iQ
+  		}
+  		
+  		-AddComplexToSubmission-> _ArN44PvvEeWWodZOLky4iQ  decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
+  			id _3yKnMN7nEeW7MO8ocVWj8Q
+  		}
+  	}
+  }
+}

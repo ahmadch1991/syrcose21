@@ -1,0 +1,126 @@
+Process _xtyqIN8MEeWlD7knc3NOdQ {
+  modelName "DeleteTODOList"
+  processType Basic
+  description "DeleteTODOList"
+  isStateful false
+  dataFlowView true
+  StartSIB _xua8QN8MEeWlD7knc3NOdQ at 350,50 size 100,90 {
+  	ComplexOutputPort _zhYusN8MEeWlD7knc3NOdQ at 5,67 size 90,18 {
+  		libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  		isList false
+  		name "todoList"
+  		-ComplexUpdate-> _BCcf8N8NEeWlD7knc3NOdQ via (312,125) decorate "Polyline" at (2,0) {
+  			id _E4aE4N8NEeWlD7knc3NOdQ
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _IdRNIN-ZEeWsv_pvkbCq6w  decorate "Polyline" at (2,0) {
+  		id _Ss-A8N8NEeWlD7knc3NOdQ
+  	}
+  }
+  
+  DataContext _xuX48N8MEeWlD7knc3NOdQ at 50,70 size 231,101 {
+  	dfViewWorkaround true
+  	ComplexVariable _BCcf8N8NEeWlD7knc3NOdQ at 10,30 size 211,51 {
+  		expanded false
+  		libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  		dfViewWorkaround true
+  		name "todolist"
+  		isList false
+  		ComplexAttribute _Q9TJ8N-YEeWsv_pvkbCq6w at 20,23 size 171,25 {
+  			libraryComponentUID "_Ajon8M5BEeWKGIrSDzlNog"
+  			dfViewWorkaround true
+  			-ComplexRead-> _Id1N0N-ZEeWsv_pvkbCq6w via (299,136) (299,246) decorate "Polyline" at (2,0) {
+  				id _J1wqEN-ZEeWsv_pvkbCq6w
+  				dfViewWorkaround true
+  			}
+  		}
+  		-ComplexRead-> _F3wpEN8NEeWlD7knc3NOdQ via (165,416) decorate "Polyline" at (2,0) {
+  			id _H8tjYN8NEeWlD7knc3NOdQ
+  			dfViewWorkaround true
+  		}
+  	}
+  }
+  
+  IterateSIB _IdRNIN-ZEeWsv_pvkbCq6w at 325,170 size 150,90 {
+  	libraryComponentUID "_t3jPkMwMEeWZVvvwxpYu8A"
+  	label "Iterate TODOEntrys"
+  	ComplexInputPort _Id1N0N-ZEeWsv_pvkbCq6w at 5,67 size 140,18 {
+  		libraryComponentUID "_t3jPkMwMEeWZVvvwxpYu8A"
+  		isList true
+  		name "list"
+  	}
+  	-BranchConnector-> _Id9JoN-ZEeWsv_pvkbCq6w   {
+  		id _IeCCIN-ZEeWsv_pvkbCq6w
+  	}
+  	
+  	-BranchConnector-> _IeNBQN-ZEeWsv_pvkbCq6w   {
+  		id _IePdgN-ZEeWsv_pvkbCq6w
+  	}
+  }
+  
+  Branch _IeNBQN-ZEeWsv_pvkbCq6w at 350,280 size 100,25 {
+  	name "exit"
+  	-ControlFlow-> _8KujEN8MEeWlD7knc3NOdQ  decorate "Polyline" at (2,0) {
+  		id _UxmskN-ZEeWsv_pvkbCq6w
+  	}
+  }
+  
+  Branch _Id9JoN-ZEeWsv_pvkbCq6w at 614,190 size 100,50 {
+  	name "next"
+  	ComplexOutputPort _IeDQQN-ZEeWsv_pvkbCq6w at 5,27 size 90,18 {
+  		libraryComponentUID "_t3jPkMwMEeWZVvvwxpYu8A"
+  		isList false
+  		name "element"
+  		-ComplexDirectDataFlow-> _MdMmYN-ZEeWsv_pvkbCq6w via (565,226) (565,347) decorate "Polyline" at (2,0) {
+  			id _N83pYN-ZEeWsv_pvkbCq6w
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _LZXK0N-ZEeWsv_pvkbCq6w  decorate "Polyline" at (2,0) {
+  		id _L5h4oN-ZEeWsv_pvkbCq6w
+  	}
+  }
+  
+  DeleteSIB _LZXK0N-ZEeWsv_pvkbCq6w at 589,270 size 150,90 {
+  	label "Delete"
+  	ComplexInputPort _MdMmYN-ZEeWsv_pvkbCq6w at 5,67 size 140,18 {
+  		libraryComponentUID "_t3jPkMwMEeWZVvvwxpYu8A"
+  		isList false
+  		name "entry"
+  	}
+  	-BranchConnector-> _LZfGoN-ZEeWsv_pvkbCq6w   {
+  		id _LZiJ8N-ZEeWsv_pvkbCq6w
+  	}
+  }
+  
+  Branch _LZfGoN-ZEeWsv_pvkbCq6w at 454,302 size 100,25 {
+  	name "deleted"
+  	-ControlFlow-> _IdRNIN-ZEeWsv_pvkbCq6w via (504,232) decorate "Polyline" at (2,0) {
+  		id _X5zMkN-ZEeWsv_pvkbCq6w
+  	}
+  }
+  
+  EndSIB _xudYgN8MEeWlD7knc3NOdQ at 350,540 size 100,65 {
+  	branchName "deleted"
+  }
+  
+  Branch _8K47IN8MEeWlD7knc3NOdQ at 350,490 size 100,25 {
+  	name "deleted"
+  	-ControlFlow-> _xudYgN8MEeWlD7knc3NOdQ  decorate "Polyline" at (2,0) {
+  		id _QHNfoN8NEeWlD7knc3NOdQ
+  	}
+  }
+  
+  DeleteSIB _8KujEN8MEeWlD7knc3NOdQ at 325,340 size 150,90 {
+  	label "Delete"
+  	ComplexInputPort _F3wpEN8NEeWlD7knc3NOdQ at 5,67 size 140,18 {
+  		libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  		isList false
+  		name "todoList"
+  	}
+  	-BranchConnector-> _8K47IN8MEeWlD7knc3NOdQ   {
+  		id _8K7XYN8MEeWlD7knc3NOdQ
+  	}
+  }
+}

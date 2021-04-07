@@ -1,0 +1,165 @@
+GUI _LIjH8NvFEeWsF7MALrkAZQ {
+  title "AddOwner"
+  additionalStylesheets [  ]
+  additionalJavaScript [  ]
+  fullWidth false
+  Template _LJXnUNvFEeWsF7MALrkAZQ at 300,70 size 260,300 {
+  	blockName "body"
+  	Form _UynhcPvuEeWWodZOLky4iQ at 10,30 size 240,240 {
+  		inline false
+  		errorMessage ""
+  		generalStyle GeneralStyling {
+  				marginTop None
+  				marginBottom None
+  				tallness Fitting
+  				attributes [  ]
+  			}
+  		MoveUp _UyqkwPvuEeWWodZOLky4iQ at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _UyrL0PvuEeWWodZOLky4iQ at 2,10 size 14,7 {
+  		}
+  		
+  		Button _UytoEPvuEeWWodZOLky4iQ at 10,150 size 200,60 {
+  			label "Add Owner"
+  			displayLabel ""
+  			styling ButtonStyling {
+  					fullWidth false
+  					size Default
+  					disabled false
+  					color Green
+  				}
+  			options ButtonOptions {
+  					isLink false
+  				}
+  			disabled false
+  			icon Icon {
+  					preIcon Plus
+  					postIcon None
+  				}
+  			generalStyle GeneralStyling {
+  					marginTop None
+  					marginBottom None
+  					tallness Fitting
+  					attributes [  ]
+  				}
+  			MoveUp _UywEUPvuEeWWodZOLky4iQ at 2,2 size 14,7 {
+  			}
+  			
+  			MoveDown _UywrYPvuEeWWodZOLky4iQ at 2,10 size 14,7 {
+  			}
+  		}
+  		
+  		Combobox _LGLJ4Py1EeWB0q9jTol-RA at 10,30 size 220,110 {
+  			multiple false
+  			label "Add Owner"
+  			styling SelectFormFieldStyling {
+  					inline false
+  					size Default
+  					disabled false
+  					color Default
+  				}
+  			validation FormFieldValidation {
+  					required false
+  					min 0
+  					max -1
+  				}
+  			additionalOptions FormFieldAdditionalOptions {
+  					readonly false
+  				}
+  			disabled false
+  			icon Icon {
+  					preIcon None
+  					postIcon None
+  				}
+  			generalStyle GeneralStyling {
+  					marginTop None
+  					marginBottom None
+  					tallness Fitting
+  					attributes [  ]
+  				}
+  			MoveUp _LGxm0Py1EeWB0q9jTol-RA at 2,2 size 14,7 {
+  			}
+  			
+  			MoveDown _LG2fUPy1EeWB0q9jTol-RA at 2,10 size 14,7 {
+  			}
+  		}
+  	}
+  }
+  
+  DataContext _LIwjUNvFEeWsF7MALrkAZQ at 10,10 size 200,611 {
+  	dfViewWorkaround true
+  	ComplexVariable _Uw4UINvFEeWsF7MALrkAZQ at 20,30 size 140,25 {
+  		expanded false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		dfViewWorkaround true
+  		name "users"
+  		isList true
+  		isInput true
+  		-ComplexListAttributeConnector-> _GM8ycPZlEeWRSJo8gc9chA  decorate "Ellipse" at (0,0) {
+  			id _GNHxkPZlEeWRSJo8gc9chA
+  			attributeName current
+  		}
+  		
+  		-ComplexChoiceData-> _LGLJ4Py1EeWB0q9jTol-RA  decorate "Text" at (0,0) decorate "Polyline" at (2,0) {
+  			id _eUJlMPy2EeWB0q9jTol-RA
+  		}
+  	}
+  	
+  	ComplexVariable _GM8ycPZlEeWRSJo8gc9chA at 20,170 size 140,25 {
+  		expanded false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		dfViewWorkaround true
+  		name "current"
+  		isList false
+  		isInput false
+  		-ComplexAttributeConnector-> _HmpwUPZlEeWRSJo8gc9chA  decorate "Ellipse" at (0,0) {
+  			id _HmxFEPZlEeWRSJo8gc9chA
+  			associationName "baseUser"
+  		}
+  	}
+  	
+  	ComplexVariable _mqey8NvFEeWsF7MALrkAZQ at 30,460 size 140,25 {
+  		expanded false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		dfViewWorkaround true
+  		name "chosenUser"
+  		isList false
+  		isInput false
+  		-FormSubmit-> _LGLJ4Py1EeWB0q9jTol-RA  decorate "Polyline" at (2,0) {
+  			id _MdRqQPy2EeWB0q9jTol-RA
+  		}
+  		
+  		-AddComplexToSubmission-> _UytoEPvuEeWWodZOLky4iQ  decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
+  			id _VgmrcNvGEeWsF7MALrkAZQ
+  		}
+  	}
+  	
+  	ComplexVariable _hkhwUNvGEeWsF7MALrkAZQ at 27,530 size 140,25 {
+  		expanded false
+  		libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  		dfViewWorkaround true
+  		name "currentList"
+  		isList false
+  		isInput true
+  		-AddComplexToSubmission-> _UytoEPvuEeWWodZOLky4iQ  decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
+  			id _kBm2wNvGEeWsF7MALrkAZQ
+  		}
+  	}
+  	
+  	ComplexVariable _HmpwUPZlEeWRSJo8gc9chA at 20,260 size 140,51 {
+  		expanded false
+  		libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  		dfViewWorkaround true
+  		name "baseUser"
+  		isList false
+  		isInput false
+  		PrimitiveAttribute _Hn2DIPZlEeWRSJo8gc9chA at 20,23 size 100,25 {
+  			libraryComponentUID "_VE6ToM5BEeWKGIrSDzlNog"
+  			-Display-> _LGLJ4Py1EeWB0q9jTol-RA  decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
+  				id _g3S3YPy2EeWB0q9jTol-RA
+  			}
+  		}
+  	}
+  }
+}

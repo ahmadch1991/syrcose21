@@ -1,0 +1,49 @@
+Process _nMpSEA3cEeaEdIuIovP4yg {
+  modelName "SubInteraction"
+  processType Basic
+  description "SubInteraction"
+  isStateful false
+  dataFlowView true
+  DataContext _nPMPwA3cEeaEdIuIovP4yg at 50,50 size 180,800 {
+  	dfViewWorkaround true
+  }
+  
+  Branch _e-eD0A3pEea41K-gq5fyQA at 606,266 size 100,50 {
+  	name "SUccess"
+  	ComplexOutputPort _e-w-wA3pEea41K-gq5fyQA at 5,27 size 90,18 {
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		isList true
+  		name "allUsers"
+  		-ComplexDirectDataFlow-> _my9T0A3pEea41K-gq5fyQA via (326,302) (326,436) decorate "Polyline" at (2,0) {
+  			id _oQ54gA3pEea41K-gq5fyQA
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _nP6ogA3cEeaEdIuIovP4yg  decorate "Polyline" at (2,0) {
+  		id _lKcd4A3pEea41K-gq5fyQA
+  	}
+  }
+  
+  StartSIB _nPsmEA3cEeaEdIuIovP4yg at 440,30 size 100,65 {
+  	-ControlFlow-> _e9WCcA3pEea41K-gq5fyQA  decorate "Polyline" at (2,0) {
+  		id _hjSJ8A3pEea41K-gq5fyQA
+  	}
+  }
+  
+  ProcessSIB _e9WCcA3pEea41K-gq5fyQA at 431,170 size 150,65 {
+  	libraryComponentUID "_l6zBwNMaEeWJV9QOcxWQYg"
+  	label "GetAllUsers"
+  	-BranchConnector-> _e-eD0A3pEea41K-gq5fyQA   {
+  		id _e-sGQA3pEea41K-gq5fyQA
+  	}
+  }
+  
+  EndSIB _nP6ogA3cEeaEdIuIovP4yg at 431,360 size 100,90 {
+  	branchName "delfin"
+  	ComplexInputPort _my9T0A3pEea41K-gq5fyQA at 5,67 size 90,18 {
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		isList true
+  		name "concreteuser1"
+  	}
+  }
+}

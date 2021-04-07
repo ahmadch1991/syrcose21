@@ -1,0 +1,70 @@
+Process _JgutgNMdEeWJV9QOcxWQYg {
+  modelName "AddTODOList"
+  description "AddTODOList"
+  dataFlowView true
+  processType Basic
+  isStateful false
+  RetrieveCurrentUserSIB _POloMNMdEeWJV9QOcxWQYg at 340,170 size 150,65 {
+  	label "Retrieve Current User"
+  	libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  	ignoredBranch [ IgnoreBranch _ZqHFgGITEeqRt5AQQVR6Ng {
+  			name "not authenticated"
+  		} ]
+  	-BranchConnector-> _POuLENMdEeWJV9QOcxWQYg   {
+  		id _POwAQNMdEeWJV9QOcxWQYg
+  		concurrent true
+  	}
+  }
+  
+  Branch _POuLENMdEeWJV9QOcxWQYg at 365,260 size 100,50 {
+  	name "success"
+  	ComplexOutputPort _QQzTINMdEeWJV9QOcxWQYg at 5,27 size 90,18 {
+  		name "currentUser"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexUpdate-> _Si878NMdEeWJV9QOcxWQYg  decorate "Polyline" at (2,0) {
+  			id _TU2S8NMdEeWJV9QOcxWQYg
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _Jg3QYNMdEeWJV9QOcxWQYg  decorate "Polyline" at (2,0) {
+  		id _WihI0NMdEeWJV9QOcxWQYg
+  		concurrent true
+  	}
+  }
+  
+  StartSIB _Jg2CQNMdEeWJV9QOcxWQYg at 365,50 size 100,90 {
+  	ComplexOutputPort _K33fkNMdEeWJV9QOcxWQYg at 5,67 size 90,18 {
+  		name "newList"
+  		isList false
+  		libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  		-ComplexUpdate-> _SL_0gNMdEeWJV9QOcxWQYg via (140,126) decorate "Polyline" at (2,0) {
+  			id _YLOzENMdEeWJV9QOcxWQYg
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _POloMNMdEeWJV9QOcxWQYg  decorate "Polyline" at (2,0) {
+  		id _VNB8kNMdEeWJV9QOcxWQYg
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _Jg3QYNMdEeWJV9QOcxWQYg at 365,350 size 100,65 {
+  	branchName "success"
+  }
+  
+  DataContext _Jg00INMdEeWJV9QOcxWQYg at 50,220 size 180,97 {
+  	dfViewWorkaround true
+  	ComplexVariable _SL_0gNMdEeWJV9QOcxWQYg at 20,30 size 140,51 {
+  		expanded false
+  		name "todolist"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_4nGPMM5AEeWKGIrSDzlNog"
+  		ComplexAttribute _Si878NMdEeWJV9QOcxWQYg at 20,23 size 100,25 {
+  			dfViewWorkaround true
+  			libraryComponentUID "_GYgwoM5BEeWKGIrSDzlNog"
+  		}
+  	}
+  }
+}

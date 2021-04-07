@@ -1,0 +1,44 @@
+package app.demo
+
+sib SayHello : info.scce.dime.app.demo.Native#sayHello
+  name : text
+  -> success
+
+sib intTint : info.scce.dime.app.demo.Native#fnApiI2I
+	a : integer
+	-> success
+		result: integer
+	-> noresult
+	-> failure
+	
+sib intTstr : info.scce.dime.app.demo.Native#fnApiI2S
+	a : integer
+	-> success
+		result: text
+	-> noresult 
+	-> failure
+	
+sib strTstr : info.scce.dime.app.demo.Native#fnApiS2S
+	input : text
+	-> success
+		output: text
+	-> noresult 
+	-> failure
+sib strURLstr : info.scce.dime.app.demo.Native#fnApiS2Surl	
+	url : text
+	input_var : text
+	input : text
+	output : text
+	-> success
+		output: text
+	-> noresult 
+	-> failure
+sib strURLlist : info.scce.dime.app.demo.Native#fnApiS2Lurl	
+	url : text
+	input_var : text
+	input : text
+	output : text
+	-> success
+		output: [text]
+	-> noresult 
+	-> failure
